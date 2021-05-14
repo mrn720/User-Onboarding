@@ -41,12 +41,12 @@ function Form(props) {
                 
                 <label>
                     Do you acccept the Terms of Service? 
-                    <input value={values.terms} onChange={onChange} name="checkbox" type="checkbox"/>
+                    <input value={values.terms} onChange={onChange} name="terms" type="checkbox"/>
                 </label>
 
                 <div className="form-group submit">
                     <h3> Add User </h3>
-                    <button disabled={disabled}>submit</button>   
+                    <button disabled={disabled} name = "submitButton">submit</button>   
 
                     <div className="errors">
                         <div>{errors.name}</div>
